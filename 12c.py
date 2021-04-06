@@ -41,7 +41,8 @@ def main():
         while True:
             lightLevel=readLight()
             ##print light level rounding to 2 decimal places
-            print("Light Level : " + format(lightLevel,'.2f') + " is " + lightCategory(lightLevel))
+            ##Also prints the category the light was placed into
+            print("Lux: " + format(lightLevel,'.2f') + " is " + lightCategory(lightLevel))
             time.sleep(1)
     ##close program if keyboard interrupt pressed
     except KeyboardInterrupt:
